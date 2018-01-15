@@ -5,10 +5,6 @@ const couponLocations = [
   { room: 'Master bedroom', amount: 7 }
 ];
 
-function couponCounter(totalAmount, location) {
-  return totalAmount + location.amount;
-}
-
 const res = couponLocations.reduce((totalAmount, location) => {
   return totalAmount + location.amount;
 }, 0); // also prints 15!
