@@ -9,6 +9,6 @@ function couponCounter(totalAmount, location) {
   return totalAmount + location.amount;
 }
 
-console.log(couponLocations.reduce((totalAmount, location, 0) => {
+const res = couponLocations.reduce((totalAmount, location) => {
   return totalAmount + location.amount;
-})); // also prints 15!
+}, 0); // also prints 15!
